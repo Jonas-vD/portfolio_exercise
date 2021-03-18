@@ -1,8 +1,13 @@
 {
-  "name": "portfolio_exercise",
+  "name": "frontendpro",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "author": "Kevin Dillaerts",
+  "scripts": {
+    "deploy": "surge . frontendpro.surge.sh",
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC"
 }

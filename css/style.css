@@ -8,6 +8,13 @@
 
 body {
   background-color: var(--darkgrey);
+  font-family: Montserrat;
+  padding-bottom: 20px;
+}
+
+p {
+  color: white;
+  margin-left: 25px;
 }
 
 header {
@@ -54,7 +61,7 @@ nav ul li::after {
   content: "";
   display: block;
   margin: 0 auto;
-  width: 73px;
+  width: 100%;
   height: 3px;
   margin-top: 15px;
   background-color: var(--darkgrey);
@@ -69,12 +76,25 @@ main {
   width: 90%;
   min-height: 100px;
   max-width: 1200px;
-
+  padding-bottom: 111px;
   margin: 0 auto;
 }
 
+section {
+  margin-top: 125px;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+section div {
+  width: calc(55% - 20px);
+}
+section div.profiel {
+  width: 35%;
+}
+
 section p {
-  width: 50%;
+  margin-top: 30px;
   font-size: 25px;
   color: var(--bluegrey);
   font-family: Montserrat;
@@ -82,19 +102,109 @@ section p {
   text-align: center;
   line-height: 38px;
 }
-aside {
-  display: flex;
-  justify-content: space-between;
+
+section img {
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-aside article {
-  width: calc(35% - 70px);
-  background-color: var(--greenish);
+section div.sidnav {
+  height: 310px;
+  width: 75px;
+  background-color: var(--bluegrey);
+  position: fixed;
+  right: 0;
+  top: 300px;
+  border-radius: 15px 0 15px 0;
+  padding: 20px 15px;
   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  box-shadow: 1px 2px 10px #262626;
+}
+
+section div.sidnav span {
+  font-size: 40px;
+  color: var(--darkgrey);
+}
+
+aside {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+  height: 500px;
+}
+
+aside a {
+  background-color: var(--greenish);
+  width: calc(33% - 60px);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 45px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 300ms;
+}
+
+aside a:hover {
+  transform: scale(1.01);
+}
+
+aside a:nth-child(1) {
+  align-self: flex-start;
+}
+aside a:nth-child(2) {
+  align-self: center;
+}
+aside a:nth-child(3) {
+  align-self: flex-end;
+}
+
+aside article span {
+  color: var(--darkgrey);
+  font-size: 106px;
+}
+
+aside article h2 {
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--darkgrey);
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+aside article p {
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--darkgrey);
+  margin-top: 45px;
 }
 
 footer {
   background-color: var(--bluegrey);
   min-height: 100px;
+  justify-content: center;
+  padding: 50px;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+footer img {
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+footer p {
+  width: 35%;
+  font-family: Marvel;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--darkgrey);
+  text-align: center;
+}
+footer span {
+  font-size: 30px;
 }
